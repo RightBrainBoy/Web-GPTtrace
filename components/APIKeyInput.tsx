@@ -1,0 +1,2 @@
+interface Props {
+  apiKey: st
