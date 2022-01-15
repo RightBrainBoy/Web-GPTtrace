@@ -12,4 +12,9 @@ interface Props {
   onChange?: (value: string) => void;
 }
 
-export const CodeBlock
+export const CodeBlock: FC<Props> = ({
+  code,
+  editable = false,
+  onChange = () => {},
+}) => {
+  const [copyText, setCopyText] = useState<str
