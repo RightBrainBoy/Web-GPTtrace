@@ -4,4 +4,12 @@ import { StreamLanguage } from '@codemirror/language';
 // import {lua} from "@codemirror/legacy-modes/mode/lua";
 import { tokyoNight } from '@uiw/codemirror-theme-tokyo-night';
 import CodeMirror from '@uiw/react-codemirror';
-import { FC, useEffec
+import { FC, useEffect, useState } from 'react';
+
+interface Props {
+  code: string;
+  editable?: boolean;
+  onChange?: (value: string) => void;
+}
+
+export const CodeBlock
