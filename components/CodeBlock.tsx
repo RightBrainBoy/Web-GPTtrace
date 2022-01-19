@@ -28,4 +28,6 @@ export const CodeBlock: FC<Props> = ({
   }, [copyText]);
 
   return (
-    <div className="relative" 
+    <div className="relative" style={{ maxHeight: '300px', overflow: 'auto' }}>
+      <button
+        className="absolute right-0 top-0 z-10 rounded bg-[#1A1
