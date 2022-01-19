@@ -24,4 +24,8 @@ export const CodeBlock: FC<Props> = ({
       setCopyText('Copy');
     }, 2000);
 
- 
+    return () => clearTimeout(timeout);
+  }, [copyText]);
+
+  return (
+    <div className="relative" 
