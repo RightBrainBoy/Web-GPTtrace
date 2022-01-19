@@ -30,4 +30,6 @@ export const CodeBlock: FC<Props> = ({
   return (
     <div className="relative" style={{ maxHeight: '300px', overflow: 'auto' }}>
       <button
-        className="absolute right-0 top-0 z-10 rounded bg-[#1A1
+        className="absolute right-0 top-0 z-10 rounded bg-[#1A1B26] p-1 text-xs text-white hover:bg-[#2D2E3A] active:bg-[#2D2E3A]"
+        onClick={() => {
+       
