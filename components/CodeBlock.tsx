@@ -41,4 +41,7 @@ export const CodeBlock: FC<Props> = ({
       <div className="rounded-md">
         <CodeMirror
           editable={editable}
-          value=
+          value={code}
+          minHeight="300px"
+          // extensions={[StreamLanguage.define(go)]}
+          theme={toky
