@@ -36,4 +36,9 @@ export const CodeBlock: FC<Props> = ({
           setCopyText('Copied!');
         }}
       >
-        {
+        {copyText}
+      </button>
+      <div className="rounded-md">
+        <CodeMirror
+          editable={editable}
+          value=
