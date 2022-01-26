@@ -44,4 +44,12 @@ export const CodeBlock: FC<Props> = ({
           value={code}
           minHeight="300px"
           // extensions={[StreamLanguage.define(go)]}
-          theme={toky
+          theme={tokyoNight}
+          onChange={(value) => onChange(value)}
+        />
+      </div>
+
+    </div>
+  );
+};
+
