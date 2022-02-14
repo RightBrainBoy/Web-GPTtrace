@@ -17,4 +17,7 @@ export default function Footer() {
         <a
           href="https://vercel.com/"
           target="_blank"
-       
+          rel="noreferrer"
+          className="font-bold hover:underline transition underline-offset-2"
+        >
+      
