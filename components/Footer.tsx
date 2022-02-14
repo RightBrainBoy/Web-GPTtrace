@@ -11,4 +11,10 @@ export default function Footer() {
           rel="noreferrer"
           className="font-bold hover:underline transition underline-offset-2"
         >
-        
+          ChatGPT{" "}
+        </a>
+        and{" "}
+        <a
+          href="https://vercel.com/"
+          target="_blank"
+       
