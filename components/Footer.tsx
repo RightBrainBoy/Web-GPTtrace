@@ -8,4 +8,7 @@ export default function Footer() {
         <a
           href="https://openai.com/blog/chatgpt"
           target="_blank"
-          rel=
+          rel="noreferrer"
+          className="font-bold hover:underline transition underline-offset-2"
+        >
+        
