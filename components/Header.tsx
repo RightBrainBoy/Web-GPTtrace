@@ -9,4 +9,8 @@ export default function Header() {
         <Image
           alt="header text"
           src="/OpenCopilot.png"
-          className="sm:w-12 sm:h-12 
+          className="sm:w-12 sm:h-12 w-8 h-8 ml-10"
+          width={32}
+          height={20}
+        />
+        <h1 className="sm:text-4xl text-2xl font-bold ml-2 
