@@ -13,4 +13,8 @@ export default function Header() {
           width={32}
           height={20}
         />
-        <h1 className="sm:text-4xl text-2xl font-bold ml-2 
+        <h1 className="sm:text-4xl text-2xl font-bold ml-2 tracking-tight">
+          GPT2bpftrace: Transforming natural language into a bpftrace program online
+        </h1>
+      </Link>
+      <a
