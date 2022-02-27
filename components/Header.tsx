@@ -20,4 +20,9 @@ export default function Header() {
       <a
         href="https://github.com/eunomia-bpf/GPT2Bpftrace"
         target="_blank"
-        rel="norefe
+        rel="noreferrer"
+      >
+        <Image
+          alt="Github Icon"
+          src="/github.svg"
+          classNam
