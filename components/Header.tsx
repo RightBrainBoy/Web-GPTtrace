@@ -25,4 +25,10 @@ export default function Header() {
         <Image
           alt="Github Icon"
           src="/github.svg"
-          classNam
+          className="sm:w-8 sm:h-[27px] w-8 h-[28px]"
+          width={32}
+          height={20}
+        />
+      </a>
+      
+    </div>
