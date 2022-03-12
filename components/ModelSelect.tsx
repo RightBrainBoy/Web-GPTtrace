@@ -7,4 +7,9 @@ interface Props {
 }
 
 interface BPFProps {
-  bpfType:
+  bpfType: BPF;
+  onChange: (bpfType: BPF) => void;
+}
+
+export const ModelSelect: FC<Props> = ({ model, onChange }) => {
+  const h
