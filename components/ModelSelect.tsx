@@ -16,4 +16,7 @@ export const ModelSelect: FC<Props> = ({ model, onChange }) => {
     onChange(e.target.value as OpenAIModel);
   };
 
-  ret
+  return (
+    <div>
+      <select
+        className="h-[40px] w-[140px] rounded-md border border-gray-300 px-3 py-2
