@@ -12,4 +12,8 @@ interface BPFProps {
 }
 
 export const ModelSelect: FC<Props> = ({ model, onChange }) => {
-  const h
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onChange(e.target.value as OpenAIModel);
+  };
+
+  ret
