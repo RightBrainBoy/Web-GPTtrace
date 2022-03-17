@@ -28,4 +28,6 @@ export const ModelSelect: FC<Props> = ({ model, onChange }) => {
           <option value="gpt-3.5">GPT-3.5</option>
         </optgroup>
         <optgroup label="Hugging Face">
-       
+          <option value="Wizardlm">Wizardlm</option>
+          <option value="Exllamma">Exllamma</option>
+          <option value="Codellama">Codellama</opti
