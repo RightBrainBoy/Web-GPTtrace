@@ -21,4 +21,8 @@ export const ModelSelect: FC<Props> = ({ model, onChange }) => {
       <select
         className="h-[40px] w-[140px] rounded-md border border-gray-300 px-3 py-2 text-black shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
         value={model}
+        onChange={handleChange}
+      >
+        <optgroup label="GPT">
+          <option value="gpt-4">GPT-4</option>
       
