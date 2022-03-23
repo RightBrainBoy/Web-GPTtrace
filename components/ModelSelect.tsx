@@ -39,4 +39,10 @@ export const ModelSelect: FC<Props> = ({ model, onChange }) => {
 
 export const BPFSelect: FC<BPFProps> = ({ bpfType, onChange }) => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    onChange(e.target
+    onChange(e.target.value as BPF);
+  };
+
+  return (
+    <div>
+      <select
+        className="h-[40px] w-[140px] rounded-md border border
