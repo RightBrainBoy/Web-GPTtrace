@@ -30,4 +30,11 @@ export const ModelSelect: FC<Props> = ({ model, onChange }) => {
         <optgroup label="Hugging Face">
           <option value="Wizardlm">Wizardlm</option>
           <option value="Exllamma">Exllamma</option>
-          <option value="Codellama">Codellama</opti
+          <option value="Codellama">Codellama</option>
+        </optgroup>
+      </select>
+    </div>
+  );
+};
+
+export const BPFSelect: FC<BPFProps> = ({ bpfType, onC
