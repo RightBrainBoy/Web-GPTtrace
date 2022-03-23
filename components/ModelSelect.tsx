@@ -37,4 +37,6 @@ export const ModelSelect: FC<Props> = ({ model, onChange }) => {
   );
 };
 
-export const BPFSelect: FC<BPFProps> = ({ bpfType, onC
+export const BPFSelect: FC<BPFProps> = ({ bpfType, onChange }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onChange(e.target
