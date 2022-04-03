@@ -6,4 +6,9 @@ interface Props {
 
 export const TextBlock: React.FC<Props> = ({
   text,
-  edita
+  editable = false,
+  onChange = () => {},
+}) => {
+  return (
+    <textarea
+      className="min-h-[500px] w-full bg-[#1A1B26] p-
