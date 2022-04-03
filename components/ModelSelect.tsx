@@ -50,4 +50,8 @@ export const BPFSelect: FC<BPFProps> = ({ bpfType, onChange }) => {
         onChange={handleChange}
       >
         <option value="bpftrace">bpftrace</option>
-        <option value
+        <option value="libbpf">libbpf</option>
+      </select>
+    </div>
+  );
+};
