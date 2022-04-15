@@ -11,3 +11,8 @@ services:
       - .:/app
       - /app/node_modules
     environment:
+      - NODE_ENV=development
+    command: npm run dev
+    restart: always
+    security_opt:
+      - no-new-privileges:true
