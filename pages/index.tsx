@@ -208,3 +208,24 @@ export default function Home() {
                 editable={!loading}
                 onChange={(value) => {
                   setOutputCode(value);
+                  setHasTranslated(false);
+                }}
+              />
+            )}
+          </div>
+          {/* <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
+            <div className="w-full rounded-md bg-[#1F2937] px-4 py-2 text-neutral-200" style={{ display: 'flex', alignItems: 'center' }}>
+              Bpftrace Program
+            </div>
+            {outputLanguage === 'Bash' ? (
+              <CodeBlock code={`${outputCode}`} />
+            ) : (
+              <CodeBlock code={`${outputCode}`} />
+            )}
+
+          </div> */}
+        {/* </div> */}
+        <Footer />
+    </div>
+  );
+}
