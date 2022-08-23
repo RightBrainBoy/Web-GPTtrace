@@ -15,3 +15,10 @@ export interface TranslateResponse {
 export declare interface ParsedEvent {
   type: 'event'
   event?: string
+  id?: string
+  data: string
+}
+
+export declare interface ReconnectInterval {
+  type: 'reconnect-interval'
+  value:
