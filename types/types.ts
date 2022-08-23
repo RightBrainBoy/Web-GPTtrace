@@ -8,4 +8,10 @@ export interface TranslateBody {
   apiKey: string;
 }
 
-export interfac
+export interface TranslateResponse {
+  code: string;
+}
+
+export declare interface ParsedEvent {
+  type: 'event'
+  event?: string
