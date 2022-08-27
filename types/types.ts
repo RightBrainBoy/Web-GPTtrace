@@ -21,4 +21,5 @@ export declare interface ParsedEvent {
 
 export declare interface ReconnectInterval {
   type: 'reconnect-interval'
-  value:
+  value: number
+}
