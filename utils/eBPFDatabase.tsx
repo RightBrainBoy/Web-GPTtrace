@@ -46,4 +46,6 @@ export const getExamples = async (query: string, apiKey: string) => {
     new OpenAIEmbeddings({openAIApiKey: apiKey, batchSize: 512})
   );
   const results = await vectorStore.similaritySearch(query, 3);
-  const mergedContent = results.map((document) => document.pageContent).join
+  const mergedContent = results.map((document) => document.pageContent).join('\n');
+  return mergedContent;
+};
