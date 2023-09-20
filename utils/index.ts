@@ -5,4 +5,6 @@ const createPrompt = async (
   query: string,
   apiKey: string,
 ) => {
-  const com
+  const complexExamples = await getExamples(query, apiKey);
+  const PROMPT = `
+  Please create a BPFTrace program that accomp
