@@ -16,4 +16,7 @@ const createPrompt = async (
   'kprobe:do_nanosleep { printf("PID %d sleeping...\n", pid); }'
   
   # count syscalls by process name
-  'tracepoint:raw_syscalls:sys_enter { @[comm] = count
+  'tracepoint:raw_syscalls:sys_enter { @[comm] = count(); }'
+  
+  # Files opened by process
+  'tracepoint:syscalls:sys_enter_open { printf("%s %s\n", comm, str(args->fi
