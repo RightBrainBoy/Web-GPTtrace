@@ -13,4 +13,7 @@ const createPrompt = async (
   Below are some simple examples of bpftrace usage:
   
   # trace processes calling sleep
-  'kprobe:do_nanosleep { printf("PID %d sleeping...\n", p
+  'kprobe:do_nanosleep { printf("PID %d sleeping...\n", pid); }'
+  
+  # count syscalls by process name
+  'tracepoint:raw_syscalls:sys_enter { @[comm] = count
