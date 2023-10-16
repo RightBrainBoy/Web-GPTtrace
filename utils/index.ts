@@ -23,4 +23,7 @@ const createPrompt = async (
   
   # Syscall count by program
   'tracepoint:raw_syscalls:sys_enter { @[comm] = count(); }'
- 
+  
+  # Read bytes by process:
+  'tracepoint:syscalls:sys_exit_read /args->ret/ { @[comm] = sum(args->ret); }'
+  
