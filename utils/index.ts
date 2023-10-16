@@ -19,4 +19,8 @@ const createPrompt = async (
   'tracepoint:raw_syscalls:sys_enter { @[comm] = count(); }'
   
   # Files opened by process
-  'tracepoint:syscalls:sys_enter_open { printf("%s %s\n", comm, str(args->fi
+  'tracepoint:syscalls:sys_enter_open { printf("%s %s\n", comm, str(args->filename)); }'
+  
+  # Syscall count by program
+  'tracepoint:raw_syscalls:sys_enter { @[comm] = count(); }'
+ 
