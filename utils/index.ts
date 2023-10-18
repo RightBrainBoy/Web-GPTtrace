@@ -30,3 +30,5 @@ const createPrompt = async (
   # Read size distribution by process:
   'tracepoint:syscalls:sys_exit_read { @[comm] = hist(args->ret); }'
   
+  # Show per-second syscall rates:
+  'tracepoint:raw_syscalls:sys_enter { @ = count(); } interval:s:
