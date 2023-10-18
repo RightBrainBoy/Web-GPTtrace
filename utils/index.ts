@@ -27,3 +27,6 @@ const createPrompt = async (
   # Read bytes by process:
   'tracepoint:syscalls:sys_exit_read /args->ret/ { @[comm] = sum(args->ret); }'
   
+  # Read size distribution by process:
+  'tracepoint:syscalls:sys_exit_read { @[comm] = hist(args->ret); }'
+  
