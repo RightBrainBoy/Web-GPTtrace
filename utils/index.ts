@@ -31,4 +31,7 @@ const createPrompt = async (
   'tracepoint:syscalls:sys_exit_read { @[comm] = hist(args->ret); }'
   
   # Show per-second syscall rates:
-  'tracepoint:raw_syscalls:sys_enter { @ = count(); } interval:s:
+  'tracepoint:raw_syscalls:sys_enter { @ = count(); } interval:s:1 { print(@); clear(@); }'
+  
+  # Trace disk size by process
+  'tracepoint:block:block_rq_issue { printf("%d %s %d\n", pid
