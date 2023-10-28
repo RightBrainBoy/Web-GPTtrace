@@ -34,4 +34,9 @@ const createPrompt = async (
   'tracepoint:raw_syscalls:sys_enter { @ = count(); } interval:s:1 { print(@); clear(@); }'
   
   # Trace disk size by process
-  'tracepoint:block:block_rq_issue { printf("%d %s %d\n", pid
+  'tracepoint:block:block_rq_issue { printf("%d %s %d\n", pid, comm, args->bytes); }'
+  
+  # Count page faults by process
+  'software:faults:1 { @[comm] = count(); }'
+  
+  # Count LLC
