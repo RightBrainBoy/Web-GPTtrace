@@ -39,4 +39,6 @@ const createPrompt = async (
   # Count page faults by process
   'software:faults:1 { @[comm] = count(); }'
   
-  # Count LLC
+  # Count LLC cache misses by process name and PID (uses PMCs):
+  'hardware:cache-misses:1000000 { @[comm, pid] = count(); }'
+  
