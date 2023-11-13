@@ -42,3 +42,7 @@ const createPrompt = async (
   # Count LLC cache misses by process name and PID (uses PMCs):
   'hardware:cache-misses:1000000 { @[comm, pid] = count(); }'
   
+  # Profile user-level stacks at 99 Hertz, for PID 189:
+  'profile:hz:99 /pid == 189/ { @[ustack] = count(); }'
+  
+  # Files op
