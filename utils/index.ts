@@ -45,4 +45,5 @@ const createPrompt = async (
   # Profile user-level stacks at 99 Hertz, for PID 189:
   'profile:hz:99 /pid == 189/ { @[ustack] = count(); }'
   
-  # Files op
+  # Files opened, for processes in the root cgroup-v2
+  'tracepoint:syscalls:sys_enter_openat /cgroup == cgroupi
