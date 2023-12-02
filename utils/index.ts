@@ -49,4 +49,6 @@ const createPrompt = async (
   'tracepoint:syscalls:sys_enter_openat /cgroup == cgroupid("/sys/fs/cgroup/unified/mycg")/ { printf("%s\n", str(args->filename)); }'
   
   Some more complex examples:
-  ${comple
+  ${complexExamples}
+  GENERATE BPFTRACE EXECUTABLE CODE THAT SHOULD BE READY TO RUN WITHOUT ANY ADDITIONAL MODIFICATIONS!!!
+  The cod
