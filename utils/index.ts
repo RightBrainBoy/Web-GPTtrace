@@ -46,4 +46,7 @@ const createPrompt = async (
   'profile:hz:99 /pid == 189/ { @[ustack] = count(); }'
   
   # Files opened, for processes in the root cgroup-v2
-  'tracepoint:syscalls:sys_enter_openat /cgroup == cgroupi
+  'tracepoint:syscalls:sys_enter_openat /cgroup == cgroupid("/sys/fs/cgroup/unified/mycg")/ { printf("%s\n", str(args->filename)); }'
+  
+  Some more complex examples:
+  ${comple
