@@ -51,4 +51,5 @@ const createPrompt = async (
   Some more complex examples:
   ${complexExamples}
   GENERATE BPFTRACE EXECUTABLE CODE THAT SHOULD BE READY TO RUN WITHOUT ANY ADDITIONAL MODIFICATIONS!!!
-  The cod
+  The code should be self-contained and able to run directly with BPFTrace. 
+  The output should appear at the 
