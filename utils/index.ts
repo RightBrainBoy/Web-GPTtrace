@@ -53,4 +53,10 @@ const createPrompt = async (
   GENERATE BPFTRACE EXECUTABLE CODE THAT SHOULD BE READY TO RUN WITHOUT ANY ADDITIONAL MODIFICATIONS!!!
   The code should be self-contained and able to run directly with BPFTrace. 
   The output should appear at the beginning of the response. 
-  There's no need to include execution instructions or explanations. Just provide the BPFTrace co
+  There's no need to include execution instructions or explanations. Just provide the BPFTrace code.
+  Do not start with "\`\`\`bpftrace".
+  `
+  return PROMPT;
+};
+
+export const OpenAIStream = 
