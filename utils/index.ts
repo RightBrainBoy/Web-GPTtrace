@@ -59,4 +59,10 @@ const createPrompt = async (
   return PROMPT;
 };
 
-export const OpenAIStream = 
+export const OpenAIStream = async (
+  help_doc: string,
+  language: string,
+  model: string,
+  key: string,
+) => {
+  const {createParser} = await im
