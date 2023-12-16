@@ -65,4 +65,7 @@ export const OpenAIStream = async (
   model: string,
   key: string,
 ) => {
-  const {createParser} = await im
+  const {createParser} = await import("eventsource-parser");
+
+  const prompt = await createPrompt(help_doc, key);
+  const system = { role: 'sy
