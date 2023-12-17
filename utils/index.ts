@@ -75,4 +75,9 @@ export const OpenAIStream = async (
       'Content-Type': 'application/json',
       Authorization: `Bearer ${key || process.env.OPENAI_API_KEY}`,
     },
-    metho
+    method: 'POST',
+    body: JSON.stringify({
+      model,
+      messages: [system],
+      temperature: 0,
+      stream: true,
