@@ -81,3 +81,8 @@ export const OpenAIStream = async (
       messages: [system],
       temperature: 0,
       stream: true,
+    }),
+  });
+
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
