@@ -68,4 +68,7 @@ export const OpenAIStream = async (
   const {createParser} = await import("eventsource-parser");
 
   const prompt = await createPrompt(help_doc, key);
-  const system = { role: 'sy
+  const system = { role: 'system', content: prompt };
+
+  const res = await fetch(`https://api.openai.com/v1/chat/completions`, {
+    headers: {
