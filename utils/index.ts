@@ -86,3 +86,8 @@ export const OpenAIStream = async (
 
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
+
+  if (res.status !== 200) {
+    const statusText = res.statusText;
+    const result = await res.body?.getReader().read();
+    throw ne
