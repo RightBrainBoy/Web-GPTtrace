@@ -90,4 +90,9 @@ export const OpenAIStream = async (
   if (res.status !== 200) {
     const statusText = res.statusText;
     const result = await res.body?.getReader().read();
-    throw ne
+    throw new Error(
+      `OpenAI API returned an error: ${
+        decoder.decode(result?.value) || statusText
+      }`,
+    );
+  }
