@@ -96,3 +96,7 @@ export const OpenAIStream = async (
       }`,
     );
   }
+  let accumulatedText = '';
+  const stream = new ReadableStream({
+    async start(controller) {
+      
