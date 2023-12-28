@@ -102,4 +102,11 @@ export const OpenAIStream = async (
       
       const onParse = (event: ParsedEvent | ReconnectInterval) => {
         if (event.type === 'event') {
+          const data = event.data;
+
+          if (data === '[DONE]') {
+            controller.close();
+            return;
+          }
+
        
