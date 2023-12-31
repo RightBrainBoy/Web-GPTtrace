@@ -109,4 +109,7 @@ export const OpenAIStream = async (
             return;
           }
 
-       
+          try {
+            const json = JSON.parse(data);
+            const text = json.choices[0].delta.content;
+            accumu
