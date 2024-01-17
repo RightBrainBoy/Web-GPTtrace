@@ -115,4 +115,12 @@ export const OpenAIStream = async (
             accumulatedText += text;
             const queue = encoder.encode(text);
             controller.enqueue(queue);
-          } catch (e) 
+          } catch (e) {
+            controller.error(e);
+          }
+        }
+      };
+
+      const parser = createParser(onParse);
+
+      for await (const chun
