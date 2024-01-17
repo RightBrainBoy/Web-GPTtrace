@@ -129,4 +129,5 @@ export const OpenAIStream = async (
     },
   });
   
-  return stre
+  return stream;
+};
