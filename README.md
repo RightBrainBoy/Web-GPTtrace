@@ -7,4 +7,7 @@ Welcome to Web-GPT2Bpftrace! Harness the power of AI to automatically generate b
 </p>
 
 ## 🌐 **Try It Online**
-Why wait? Test it right now at [Web-GPT-2-Bp
+Why wait? Test it right now at [Web-GPT-2-Bpftrace](https://gpt-2-bpftrace.vercel.app/).
+
+1. Enter your natural language command into the left text box.
+2. 
