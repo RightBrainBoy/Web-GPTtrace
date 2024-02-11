@@ -24,4 +24,7 @@ Prefer running it on your machine? Here's how:
 ### **1. Get the Code**
 
 ```bash
-git
+git clone https://github.com/RightBrainBoy/Web-GPT2Bpftrace.git
+```
+
+### **2. Install Necessary Dependen
