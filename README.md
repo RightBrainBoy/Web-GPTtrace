@@ -11,4 +11,8 @@ Why wait? Test it right now at [Web-GPT-2-Bpftrace](https://gpt-2-bpftrace.verce
 
 1. Enter your natural language command into the left text box.
 2. The AI-generated bpftrace program will appear in the right text box.
-3. Copy the generated program, save it lo
+3. Copy the generated program, save it locally, e.g., as `gpt-bpftrace.bt`.
+4. Run it with bpftrace using the command:
+
+```console
+$sudo bpftrace gpt-bpftr
