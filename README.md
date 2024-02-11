@@ -15,4 +15,13 @@ Why wait? Test it right now at [Web-GPT-2-Bpftrace](https://gpt-2-bpftrace.verce
 4. Run it with bpftrace using the command:
 
 ```console
-$sudo bpftrace gpt-bpftr
+$sudo bpftrace gpt-bpftrace.bt
+```
+
+## 🖥 **Run It Locally**
+Prefer running it on your machine? Here's how:
+
+### **1. Get the Code**
+
+```bash
+git
