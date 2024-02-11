@@ -27,4 +27,14 @@ Prefer running it on your machine? Here's how:
 git clone https://github.com/RightBrainBoy/Web-GPT2Bpftrace.git
 ```
 
-### **2. Install Necessary Dependen
+### **2. Install Necessary Dependencies**
+Before you get started, ensure you have all the needed packages.
+
+```bash
+npm install
+```
+
+### **3. Fire It Up!**
+
+```bash
+npm run
