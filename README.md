@@ -10,4 +10,5 @@ Welcome to Web-GPT2Bpftrace! Harness the power of AI to automatically generate b
 Why wait? Test it right now at [Web-GPT-2-Bpftrace](https://gpt-2-bpftrace.vercel.app/).
 
 1. Enter your natural language command into the left text box.
-2. 
+2. The AI-generated bpftrace program will appear in the right text box.
+3. Copy the generated program, save it lo
