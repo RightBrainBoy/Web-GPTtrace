@@ -37,4 +37,9 @@ npm install
 ### **3. Fire It Up!**
 
 ```bash
-npm run
+npm run dev
+```
+Now, navigate to your local server and see Web-GPT2Bpftrace in action!
+
+## 🌟 **Features**
+-
