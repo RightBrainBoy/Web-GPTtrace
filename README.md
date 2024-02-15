@@ -42,4 +42,5 @@ npm run dev
 Now, navigate to your local server and see Web-GPT2Bpftrace in action!
 
 ## 🌟 **Features**
--
+- **Intuitive UI**: Seamless conversion from natural language to bpftrace programs.
+- **AI-Powered**: Utiliz
