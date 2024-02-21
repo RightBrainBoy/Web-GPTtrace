@@ -43,4 +43,5 @@ Now, navigate to your local server and see Web-GPT2Bpftrace in action!
 
 ## 🌟 **Features**
 - **Intuitive UI**: Seamless conversion from natural language to bpftrace programs.
-- **AI-Powered**: Utiliz
+- **AI-Powered**: Utilizes the advanced capabilities of OpenAI's GPT.
+- **Open Source**: Dive deep into the code, contribute, o
