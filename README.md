@@ -47,4 +47,6 @@ Now, navigate to your local server and see Web-GPT2Bpftrace in action!
 - **Open Source**: Dive deep into the code, contribute, or customize it to your liking.
 
 ## 📖 **How ot works**
-Discover the depths and details of Web-GPT2Bpftrace i
+Discover the depths and details of Web-GPT2Bpftrace in the README of [Web-GPTtrace](https://github.com/RightBrainBoy/Web-GPTtrace)
+## 🙌 **Contribute**
+Contributio
