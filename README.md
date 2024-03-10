@@ -49,4 +49,7 @@ Now, navigate to your local server and see Web-GPT2Bpftrace in action!
 ## 📖 **How ot works**
 Discover the depths and details of Web-GPT2Bpftrace in the README of [Web-GPTtrace](https://github.com/RightBrainBoy/Web-GPTtrace)
 ## 🙌 **Contribute**
-Contributio
+Contributions from everyone are always welcome!
+
+## 📝 **License**
+This project is licensed under [MIT License](LICENSE).
